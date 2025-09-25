@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm init:*)",
+      "Bash(npm install:*)",
+      "Bash(python:*)",
+      "Bash(chmod:*)",
+      "Bash(./setup-all.sh)",
+      "Bash(./scripts/convert.sh:*)",
+      "Bash(npx marp:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

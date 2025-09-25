@@ -1,0 +1,45 @@
+# pycharm project files
+.idea
+
+
+# Virtual Environments
+**/.venv/
+**/venv/
+**/env/
+
+# Node modules
+**/node_modules/
+
+# Output files
+**/output/*.pptx
+**/output/*.pdf
+**/output/*.html
+**/output/*.png
+**/output/*.jpg
+
+# Python
+**/__pycache__/
+**/*.pyc
+**/.pytest_cache/
+**/*.egg-info/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+**/tmp/
+**/temp/
+
+# Log files
+**/*.log
+
+# Config files with secrets
+**/.env
+**/config/secrets.json
