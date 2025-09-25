@@ -57,27 +57,71 @@ All approaches use the same test file for comparison:
 
 ## 🎨 Output Comparison
 
-| Approach | Output Type | Editable Text | File Size | Setup Complexity |
-|----------|-------------|---------------|-----------|------------------|
-| Marp CLI | Images in PPTX | ❌ | Small | Low |
-| Pandoc | Native PPTX | ✅ | Medium | Medium |
-| md2pptx | Native PPTX | ✅ | Medium | Medium |
+| Approach | Status | Output Type | Editable Text | File Size | Speed |
+|----------|--------|-------------|---------------|-----------|-------|
+| **Pandoc Universal** | ✅ Working | Native PPTX | ✅ | 44-70KB | 2-4s |
+| **Python md2pptx** | ✅ Working | Native PPTX | ✅ | 42KB | 1-2s |
+| **Marp CLI** | ❌ PPTX Broken | Images in PPTX | ❌ | Timeout | Failed |
+
+## 📁 **Generated Output Files - Ready to Use**
+
+### 🏆 **Production-Ready PPTX Files**
+
+| File | Location | Size | Description |
+|------|----------|------|-------------|
+| **🥇 gcp-slides-with-notes.pptx** | `04-pandoc-universal/output/` | 70KB | **BEST OVERALL** - With rich presenter notes |
+| **🥈 gcp-slides-python.pptx** | `03-md2pptx-python/output/` | 42KB | **FASTEST** - Python-generated, clean formatting |
+| **gcp-slides-basic.pptx** | `04-pandoc-universal/output/` | 44KB | Basic Pandoc conversion |
+| **gcp-slides-advanced.pptx** | `04-pandoc-universal/output/` | 44KB | Enhanced Pandoc with slide-level=2 |
+| **gcp-slides-metadata.pptx** | `04-pandoc-universal/output/` | 45KB | With presentation metadata |
+
+### 📋 **Quick Access Commands**
+
+```bash
+# Copy best overall file to desktop
+cp 04-pandoc-universal/output/gcp-slides-with-notes.pptx ~/Desktop/
+
+# Copy fastest-generated file
+cp 03-md2pptx-python/output/gcp-slides-python.pptx ~/Desktop/
+
+# View all generated files
+ls -lh */output/*.pptx
+
+# Open best file directly
+open 04-pandoc-universal/output/gcp-slides-with-notes.pptx
+```
 
 ## 💡 Recommendations
 
-**For beginners**: Start with Marp CLI
-- Easiest setup and usage
-- Direct PPTX output works well for basic needs
+**🥇 For Google Slides import with presenter notes**: Use Pandoc Universal with Notes
+- File: `04-pandoc-universal/output/gcp-slides-with-notes.pptx`
+- Rich presenter notes from blog post integration
+- Perfect Google Slides compatibility
 
-**For best results**: Use Pandoc Universal
-- Generates editable text (not images)
-- Imports perfectly into Google Slides
-- Most flexible and feature-rich
+**🥈 For speed and simplicity**: Use Python md2pptx
+- File: `03-md2pptx-python/output/gcp-slides-python.pptx`
+- Fastest conversion (1-2 seconds)
+- Smallest file size (42KB)
+- Clean, professional formatting
 
-**For customization**: Use md2pptx Python
-- Template support
-- Advanced markdown features
-- Production-grade solution
+**⚠️ Avoid**: Marp CLI for PPTX export
+- PPTX export functionality is fundamentally broken (timeout issues)
+- HTML export still works for web presentations
+- Not recommended for PowerPoint/Google Slides workflows
+
+### 🚀 **Master Conversion Script**
+
+Use the unified conversion interface:
+```bash
+# Generate with presenter notes (recommended)
+python master-convert.py shared/input/gcp-cert-prep-slides-v2.md --approach pandoc-with-notes
+
+# Generate fastest version
+python master-convert.py shared/input/gcp-cert-prep-slides-v2.md --approach python-md2pptx
+
+# Compare all approaches
+python master-convert.py shared/input/gcp-cert-prep-slides-v2.md --approach all-approaches
+```
 
 ## 🔧 Prerequisites
 

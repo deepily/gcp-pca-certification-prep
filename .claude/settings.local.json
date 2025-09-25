@@ -8,7 +8,11 @@
       "Bash(./setup-all.sh)",
       "Bash(./scripts/convert.sh:*)",
       "Bash(npx marp:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git push:*)",
+      "Bash(timeout 30 npx marp:*)",
+      "Bash(find:*)",
+      "Bash(src/scripts/notify.sh:*)"
     ],
     "deny": [],
     "ask": []
