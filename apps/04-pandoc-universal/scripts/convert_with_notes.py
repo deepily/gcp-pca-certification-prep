@@ -87,6 +87,7 @@ def run_pandoc_conversion( enhanced_slides_path: str, output_dir: str ):
         enhanced_slides_path,
         "-t", "pptx",
         "--slide-level=2",
+        "--reference-doc=templates/custom-reference.pptx",
         "--metadata", "title=GCP Certification Prep - Enhanced with Notes",
         "-o", str( output_path / "gcp-slides-with-notes.pptx" )
     ]

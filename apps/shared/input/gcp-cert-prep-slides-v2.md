@@ -3,15 +3,14 @@
 
 ---
 
-## Slide 1: Who Doesn't Love Studying Evenings and Weekends?
-- $100 bet: nobody does
+## Who Doesn't Love Studying Evenings and Weekends?
 - "Negative affect engenders negative learning outcomes"
-- PMLE sprint = cognitive nightmare
+- PMLE sprint = cognitive depletion
 - Never. Again.
 
 ---
 
-## Slide 2: The Brain Damage Problem
+## The Brain Damage Problem
 - 50-60 hour weeks = brain damaged
 - Best capacity: already consumed
 - Need: low friction ingestion
@@ -19,15 +18,15 @@
 
 ---
 
-## Slide 3: Breathless Podcasts vs. Big Faceful of Book
-- Book: dry, painful, rejected
+## Breathless Podcasts vs. A Big Faceful of Text
+- Book: too dry, rejected
 - Podcast: "relentlessly relatable" banter
-- Bike, gym, walks = learning time
-- "Cold water on a hot day"
+- Bike, gym, metro, walks = learning time
+- "A cold glass of water on a hot day"
 
 ---
 
-## Slide 4: The Golden Trick
+## The Golden Trick
 - Mock the hosts → predict their words
 - Trick yourself into engagement
 - Second listen: answer before them
@@ -35,7 +34,7 @@
 
 ---
 
-## Slide 5: The Cookie Cutter Process
+## The Cookie Cutter Process
 - Digital hammer and chisel
 - Hand-curated plain text (tedious)
 - Wish: could script it
@@ -44,17 +43,16 @@
 
 ---
 
-## Slide 6: The Chapter Grind
+## The 12 Chapter Grind
 **Outer loop:** All chapters  
-**Inner loop:**
 - Scrape → prompt → build
-- Chapter: 1x
-- Q&A: 2x active
-- Exam → wrong answer podcast: 2x
+- Chapter: Listen 1x
+- Q&A: Listen 2x active
+- Exam → wrong answer podcast: 2x active
 
 ---
 
-## Slide 7: The Practice Exam Two-Step
+## The Practice Exam Two-Step
 - Take exam → screenshot mistakes
 - Build failure podcast
 - Listen 2x actively
@@ -62,33 +60,36 @@
 
 ---
 
-## Slide 8: Hastily vs. Leisurely
-- Round 1: 2 months of pain
+## Hastily vs. Leisurely
+- Round 1: 2 months of annoyance
 - Round 2: 4 months, relaxed
 - Difference: "astounding"
 - **"It was easy!"**
 
 ---
 
-## Slide 9: The Learning Equation
+## The Learning Equation
 ## L = F × I × T × (1/Duress)
 
-Maximize all variables:
+Maximize:
 - Frequency × Intensity × Time
-- Divided by Duress
-- Built automaticity
+
+Minimize:
+- Duress
+
+Build automaticity
 
 ---
 
-## Slide 10: Handy Little Hack
+## Handy Little Hack
 - Eliminate 2 bad choices
 - Not coin flipping: reasoning
-- Practice elimination Day 1
+- Practice elimination from Day 1
 - Build cognitive reps
 
 ---
 
-## Slide 11: The Friday Disaster
+## The Friday Disaster
 - 5 hours sleep
 - "Miserably tired"
 - Struggling to stay awake
@@ -96,18 +97,18 @@ Maximize all variables:
 
 ---
 
-## Slide 12: Distribution Mismatch
+## Distribution Mismatch
 **Podcasts overemphasized:**
 - Database selection
 
 **Exam surprised with:**
 - Kubernetes/GKE clusters
-- Apigee (never in podcasts!)
+- Apigee (not in podcasts!)
 - Case studies
 
 ---
 
-## Slide 13: Actionable & Obvious Wisdom
+## Actionable & Obvious Wisdom
 ## "Start now"
 
 - Practice scenario questions
@@ -117,7 +118,7 @@ Maximize all variables:
 
 ---
 
-## Slide 14: Mindless Task Learning
+## Mindless Task Learning
 - Dishes = learning
 - Laundry = certification  
 - Cleaning = cloud architecture
@@ -126,9 +127,7 @@ Maximize all variables:
 
 ---
 
-## Slide 15: Final Words
+## Final Words
 ## "Get a good night's sleep!"
 
-*Unlike my exam day*
-
-**Question:** What's your certification horror story?
+*Don't try this at home!*
