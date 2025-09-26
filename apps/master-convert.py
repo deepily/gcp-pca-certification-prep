@@ -60,27 +60,45 @@ class ConversionMaster:
 
     def _pandoc_basic( self, input_file: str, output_file: str, **kwargs ):
         """Basic Pandoc conversion"""
+        # Check if custom font template exists
+        font_template = self.project_root / "04-pandoc-universal" / "templates" / "custom-reference.pptx"
+
         cmd = [
             "pandoc",
             input_file,
-            "-t", "pptx",
-            "-o", output_file
+            "-t", "pptx"
         ]
 
-        return self._run_command( cmd, "Basic Pandoc conversion" )
+        # Add font template if available
+        if font_template.exists():
+            cmd.extend( ["--reference-doc", str( font_template )] )
+
+        cmd.extend( ["-o", output_file] )
+
+        return self._run_command( cmd, "Basic Pandoc conversion (with Helvetica Neue)" )
 
     def _pandoc_enhanced( self, input_file: str, output_file: str, **kwargs ):
         """Enhanced Pandoc conversion with metadata"""
+        # Check if custom font template exists
+        font_template = self.project_root / "04-pandoc-universal" / "templates" / "custom-reference.pptx"
+
         cmd = [
             "pandoc",
             input_file,
             "-t", "pptx",
-            "--slide-level=2",
-            "--metadata", "title=GCP Certification Prep - Enhanced",
-            "-o", output_file
+            "--slide-level=2"
         ]
 
-        return self._run_command( cmd, "Enhanced Pandoc conversion" )
+        # Add font template if available
+        if font_template.exists():
+            cmd.extend( ["--reference-doc", str( font_template )] )
+
+        cmd.extend( [
+            "--metadata", "title=GCP Certification Prep - Enhanced",
+            "-o", output_file
+        ] )
+
+        return self._run_command( cmd, "Enhanced Pandoc conversion (with Helvetica Neue)" )
 
     def _pandoc_with_notes( self, input_file: str, output_file: str, blog_file: str = None, **kwargs ):
         """Pandoc conversion with presenter notes from blog post"""

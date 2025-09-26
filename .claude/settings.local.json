@@ -12,7 +12,10 @@
       "Bash(git push:*)",
       "Bash(timeout 30 npx marp:*)",
       "Bash(find:*)",
-      "Bash(src/scripts/notify.sh:*)"
+      "Bash(src/scripts/notify.sh:*)",
+      "Bash(pandoc:*)",
+      "WebSearch",
+      "Bash(fc-list:*)"
     ],
     "deny": [],
     "ask": []
